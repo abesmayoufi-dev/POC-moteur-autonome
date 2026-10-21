@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-21T15:40:57.206795+00:00",
+  "source_file": "accelerometer_data.csv",
+  "method": {
+    "filter": "median_glissant_3",
+    "threshold_g": -2.5,
+    "unit": "G",
+    "event_rule": "acceleration_longitudinale_filtree <= -threshold_g"
+  },
+  "summary": {
+    "samples_count": 6,
+    "violent_braking_count": 2,
+    "violent_braking_detected": true
+  },
+  "events": [
+    {
+      "timestamp": "2026-10-21T08:00:02",
+      "raw_g": -2.8,
+      "filtered_g": -2.8,
+      "type": "FREINAGE_VIOLENT"
+    },
+    {
+      "timestamp": "2026-10-21T08:00:03",
+      "raw_g": -2.9,
+      "filtered_g": -2.8,
+      "type": "FREINAGE_VIOLENT"
+    }
+  ],
+  "measurements": [
+    {
+      "timestamp": "2026-10-21T08:00:00",
+      "raw_g": 0.1,
+      "filtered_g": -0.15,
+      "violent_braking": false
+    },
+    {
+      "timestamp": "2026-10-21T08:00:01",
+      "raw_g": -0.4,
+      "filtered_g": -0.4,
+      "violent_braking": false
+    },
+    {
+      "timestamp": "2026-10-21T08:00:02",
+      "raw_g": -2.8,
+      "filtered_g": -2.8,
+      "violent_braking": true
+    },
+    {
+      "timestamp": "2026-10-21T08:00:03",
+      "raw_g": -2.9,
+      "filtered_g": -2.8,
+      "violent_braking": true
+    },
+    {
+      "timestamp": "2026-10-21T08:00:04",
+      "raw_g": 0.2,
+      "filtered_g": -0.1,
+      "violent_braking": false
+    },
+    {
+      "timestamp": "2026-10-21T08:00:05",
+      "raw_g": -0.1,
+      "filtered_g": 0.05,
+      "violent_braking": false
+    }
+  ]
+}
